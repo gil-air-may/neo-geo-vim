@@ -36,6 +36,8 @@ Plug 'sbdchd/neoformat'
 Plug 'junegunn/rainbow_parentheses.vim'
 call plug#end()
 
+set nobackup
+set noswapfile
 
 " Setup some default ignores
 let g:ctrlp_custom_ignore = {
@@ -110,10 +112,6 @@ au TermOpen * setlocal bufhidden=hide
 
 "To map <Esc> to exit terminal-mode:
 :tnoremap <Esc> <C-\><C-n>
-
-"Change to next / prev tab
-nnoremap <TAB>l :+tabnext<cr>
-nnoremap <TAB>h :-tabnext<cr>
 
 "Paste from clipboard
 nnoremap <leader>p "+p
